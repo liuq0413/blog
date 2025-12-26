@@ -33,6 +33,19 @@ categories: git
 
 ### git init
 
+### 创建分支
+
+- 创建并切换到名为 "name" 的新分支。
+> git checkout -b name
+
+
+## 删除远程remote
+
+> git remote -v 
+
+ - 删除名为 origin 的远程仓库：
+> git remote remove origin
+
 
 
 ### 问题

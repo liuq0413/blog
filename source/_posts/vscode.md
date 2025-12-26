@@ -7,3 +7,7 @@ categories: vscode
 
 
 # vscode
+
+
+- 打开终端
+    > crt + j
