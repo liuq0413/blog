@@ -11,3 +11,10 @@ categories: vscode
 
 - 打开终端
     > crt + j
+
+- 返回上一个位置
+  - windows
+    > alt + ⬅
+
+- 将页面移到右边
+    > ctrl + alt + ⬅ 
