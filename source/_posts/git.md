@@ -254,17 +254,6 @@ categories: git
     git checkout v1.0.0             # 切换到标签
 ```
 
-## git cherry-pick
-
-- 选择性地应用某个提交到当前分支
-
-> git cherry-pick [commit]
-```bash
-    git cherry-pick commit-hash     # 应用指定提交
-    git cherry-pick -n commit-hash  # 应用但不自动提交
-    git cherry-pick commit1 commit2 # 应用多个提交
-```
-
 ## git revert
 
 - 撤销指定提交，创建新的提交来反转更改
@@ -309,38 +298,6 @@ categories: git
     git config --global alias.st status                # 设置别名
 ```
 
-## git rm
-
-- 从 git 中删除文件
-
-> git rm [options] [file]
-```bash
-    git rm file.txt                  # 删除文件并暂存删除操作
-    git rm --cached file.txt         # 从暂存区删除，但保留工作区文件
-    git rm -r folder/                # 递归删除文件夹
-```
-
-## git mv
-
-- 移动或重命名文件
-
-> git mv [old] [new]
-```bash
-    git mv old-file.txt new-file.txt # 重命名文件
-    git mv file.txt folder/          # 移动文件到文件夹
-```
-
-## git clean
-
-- 清理未跟踪的文件
-
-> git clean [options]
-```bash
-    git clean -n                     # 预览将要删除的文件（dry-run）
-    git clean -f                     # 删除未跟踪的文件
-    git clean -fd                    # 删除未跟踪的文件和目录
-    git clean -i                     # 交互式清理
-```
 
 ## git show
 
@@ -354,37 +311,7 @@ categories: git
     git show branch-name             # 显示分支的最新提交
 ```
 
-## git blame
 
-- 查看文件的每一行是谁修改的
-
-> git blame [file]
-```bash
-    git blame readme.md              # 查看文件每一行的作者
-    git blame -L 10,20 readme.md    # 查看第 10-20 行
-```
-
-## git bisect
-
-- 二分查找定位问题提交
-
-> git bisect [command]
-```bash
-    git bisect start                 # 开始二分查找
-    git bisect bad                   # 标记当前提交为有问题
-    git bisect good commit-hash      # 标记某个提交为正常
-    git bisect reset                 # 结束二分查找并重置
-```
-
-## git reflog
-
-- 查看引用日志，找回丢失的提交
-
-> git reflog
-```bash
-    git reflog                       # 查看所有引用日志
-    git reflog show branch-name      # 查看特定分支的日志
-```
 
 ## git submodule
 
